@@ -42,7 +42,9 @@ Esto permite realizar análisis cruzados como: desempeño por género, rentabili
 Las fechas abarcan desde 2023 hasta mayo de 2025, lo cual permite análisis de tendencias recientes y proyecciones a futuro. Esto es especialmente útil para simulaciones en Power BI o modelos predictivos.
 ### Cited:
 Los datos fueron generados artificialmente usando herramientas bien establecidas:
+
 •	Faker para generar nombres y texto.
+
 •	Pandas y NumPy para manipulación y aleatorización de datos.
 No se utilizaron fuentes externas reales
 
@@ -51,12 +53,12 @@ Al ser un data set relativamente pequeño, se utilizará SQL para un análisis e
 ## Limpieza:
 ### Archivo cine.csv
 •	Formateo de fechas
-•	Campos vacíos:
-o	Dato por default -> No había datos por default
-o	Dato aproximado -> Al haber muchos datos con varias diferencias no se tomó en cuenta 
-o	Eliminar Fila -> se decidió el eliminar las filas, esto hizo que 199 datos fueron eliminados, de los 10,000 originales
+•	Campos vacíos:	
+  • Dato por default -> No había datos por default
+	 • Dato aproximado -> Al haber muchos datos con varias diferencias no se tomó en cuenta 
+  • Eliminar Fila -> se decidió el eliminar las filas, esto hizo que 199 datos fueron eliminados, de los 10,000 originales
 •	Campos duplicados:
-o	 No había datos duplicados
+  •No había datos duplicados
 ### Archivo sala.csv
 •	Tipo de sala corregido y formateado  
 ### Archivo Peliculas:
@@ -85,6 +87,6 @@ eliminaremos esas filas porque no nos son útiles	y probablemente sean ventas ma
 Esto nos quita 886 filas, nos restan 8723 registros 
 
 Despues de varias consultas y movimientos realizados, tenemos 2 opciones, al ser un data set relativamente pequeño, podríamos unir todo mediante Joins, y quedarnos con la información que queramos o poder seguir con nuestros 3 archivos y trabajar con ellos en power Bi con un modelado de datos correcto.
-obte por trabajar con un modelado de datos en POower Bi, porque la tabla de películas tiene información que puede ser relevante a analiszar
+obte por trabajar con un modelado de datos en POower Bi, porque la tabla de películas tiene información que puede ser relevante a analizar
 
 ## Visual - Power BI
