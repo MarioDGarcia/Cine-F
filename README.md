@@ -87,6 +87,6 @@ eliminaremos esas filas porque no nos son útiles	y probablemente sean ventas ma
 Esto nos quita 886 filas, nos restan 8723 registros 
 
 Despues de varias consultas y movimientos realizados, tenemos 2 opciones, al ser un data set relativamente pequeño, podríamos unir todo mediante Joins, y quedarnos con la información que queramos o poder seguir con nuestros 3 archivos y trabajar con ellos en power Bi con un modelado de datos correcto.
-obte por trabajar con un modelado de datos en POower Bi, porque la tabla de películas tiene información que puede ser relevante a analizar
+obte por trabajar con un modelado de datos en Power BI, porque la tabla de películas tiene información que puede ser relevante a analizar
 
 ## Visual - Power BI
