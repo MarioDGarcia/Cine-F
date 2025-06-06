@@ -65,16 +65,20 @@ o	 No había datos duplicados
 ## Analisis
 Nuestros datos están divididos en 3 archivos como se mencionó anteriormente, se usará SQL para poder hacer una breve análisis exploratorio y familiarizarnos con los datos	
 Unificaremos las 3 tablas para poder ver en una sola consulta unos datos mas detallados
+
 ![image](https://github.com/user-attachments/assets/7c02a780-ff22-4495-88ef-c03a43babe2a)
 La consulta anterior nos da como resultado:
 ![image](https://github.com/user-attachments/assets/ecc75ec2-ee5e-46f1-8fcd-959c24e3683d)
+
 Aquí podemos ver la fecha, el tipo de sala que se proyectaba, los boletos vendidos, el precio del boleto, película y demás apartados.
 En Veremos si hay datos que se salen de sus limites, como boletos vendidos y la capacidad de la sala con un ordenamiento por boletos vendidos
+
  ![image](https://github.com/user-attachments/assets/a4424da8-524d-4555-9558-3045361cf77d)
 
-Vemos que si hay ocasiones sonde los boletos vendidos superan a la capacidad de la sala, eliminaremos esas filas porque no nos son útiles	y probablemente sean ventas mal registradas
+Vemos que si hay ocasiones sonde los boletos vendidos superan a la capacidad de la sala, 
+eliminaremos esas filas porque no nos son útiles	y probablemente sean ventas mal registradas
  ![image](https://github.com/user-attachments/assets/3ead897f-9703-40cd-a233-5ff9a8a36475)
-
+ 
 Esto nos quita 886 filas, nos restan 8723 registros 
 
 Despues de varias consultas y movimientos realizados, tenemos 2 opciones, al ser un data set relativamente pequeño, podríamos unir todo mediante Joins, y quedarnos con la información que queramos o poder seguir con nuestros 3 archivos y trabajar con ellos en power Bi con un modelado de datos correcto.
