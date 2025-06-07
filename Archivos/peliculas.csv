@@ -1,0 +1,101 @@
+idPelicula,titulo,calificacion,genero,director,estrellas,a�o,duracion en Minutos
+1,Porro harum facere,5.2,Accion,Wilfrido Juan Carlos Lerma,3,2015,157
+2,Veniam,3.2,Documental,Susana Zavala Piña,5,1983,81
+3,Adipisci et animi nam,8.1,Romance,Yuridia Loera,1,2014,143
+4,Sapiente quis,9.3,Animacion,Mayte Jonás Bahena Galarza,3,2022,134
+5,Dolores modi quia,5.7,Comedia,Lic. Norma Gamez,4,1985,149
+6,Vel aspernatur quod aspernatur,8.5,Accion,Lourdes Cruz Montemayor,1,2021,93
+7,Exercitationem illum quidem,3.6,Terror,Francisco Javier Gustavo Cazares,5,2018,124
+8,Eius neque,8.8,Drama,Úrsula Arreola Abrego,5,2015,119
+9,Ab blanditiis,3.1,Drama,Yuridia Horacio Mejía,4,1988,153
+10,Minus similique,1.3,Animacion,Julia Vásquez Gómez,2,2005,165
+11,Facilis aperiam,6.6,Comedia,Helena Velasco,5,1986,98
+12,Suscipit velit pariatur maiores placeat,1.3,Comedia,Samuel Alemán,4,2019,85
+13,Quia,7.2,Accion,Camilo Luis Manuel Valle Palacios,5,2003,109
+14,Quisquam corrupti ipsa,2.9,Comedia,Alma Carlota Barrientos,2,2008,171
+15,Dolores adipisci adipisci,9.9,Ciencia Ficcion,Agustín Guillermo Saavedra Ayala,2,2005,114
+16,Fugit nemo,5.1,Accion,Catalina Rodarte Alfaro,1,1994,114
+17,Perspiciatis illum sed quis,6.6,Documental,Dr. Isaac de la Crúz,3,2004,118
+18,Ullam earum,4.4,Animacion,Cristobal Collazo,5,2009,88
+19,Omnis voluptatibus,2.1,Animacion,Estela Bernabé Zúñiga Quintanilla,2,2015,147
+20,Omnis,6,Documental,Zeferino Alberto Serrano,3,2017,119
+21,Placeat doloremque numquam officiis,9.1,Animacion,Federico Dolores Barela Urías,5,2017,172
+22,Neque magni,5,Ciencia Ficcion,Pablo Silvia Pizarro Meza,5,2017,138
+23,Maiores eaque,8,Drama,Carlos Ayala Curiel,3,2012,133
+24,Molestias,3.9,Terror,Luis Gracia Aparicio,2,2000,97
+25,Odit,1.6,Terror,Leonor Israel Palomino Patiño,5,2015,152
+26,Nam magnam eum,8.1,Accion,Alta  Gracia Mónica Nevárez,3,2018,127
+27,Molestiae,4.9,Accion,Indira Adalberto Arguello Hernandes,5,2004,81
+28,Repellendus deleniti,9,Accion,Rodrigo Estela Tafoya,2,2008,127
+29,Tenetur beatae,3.1,Terror,Cristian Silvano Serna Castro,5,2005,105
+30,Consectetur iste,4.6,Animacion,Rufino Porfirio Noriega Fernández,2,1991,161
+31,Eum beatae,3,romance,Natividad Casillas,2,2000,173
+32,Nemo distinctio,7.3,Comedia,Wendolin Carlos Esparza Corrales,4,2015,159
+33,Cupiditate,8.1,Animacion,María José Irene Córdova,3,2009,119
+34,Perspiciatis,8.4,Animacion,Teresa Rafaél Acosta,1,2020,79
+35,Laborum molestias maxime quas cumque,5.2,Accion,Agustín Federico Espinal Lozano,5,2008,143
+36,Temporibus doloribus dolores,2.5,Animacion,Dr. Delia de la Crúz,2,2024,174
+37,Fugiat autem modi,4,Comedia,Lic. Antonia Téllez,3,2023,159
+38,Exercitationem,6.9,Romance,René Monroy,1,1994,150
+39,Itaque facilis,9.1,comedia,Víctor Zambrano Heredia,4,2005,151
+40,In,9.2,Animacion,VerónicaGracielaPalomino,2,2025,116
+41,Eum voluptates laborum,5.5,Accion,AmaliaAlmarazMéndez,2,1993,83
+42,Nesciunt,3.5,Comedia,Humberto Hilda Cabrera,1,2006,112
+43,Doloremque,7.2,Animacion,Gonzalo Esperanza Saldaña Santillán,4,2005,130
+44,Numquam tempore,9.1,Comedia,Mtro. Hilda Jaimes,5,1985,156
+45,Sed,6.1,Animacion,Mtro. Inés Gonzales,1,1994,108
+46,Eaque laudantium praesentium tempore esse,6.7,Animacion,Mariana Patiño Ceja,1,1998,100
+47,Quibusdam,8.2,Ciencia Ficcion,Lic. Lilia Urrutia,2,1993,126
+48,Eius itaque,3.4,Drama,Francisca Almaraz Longoria,4,2010,150
+49,Enim,7.9,Animacion,Angélica Mateo Oquendo,2,2025,79
+50,Est placeat,4.2,Drama,Beatriz Bruno Guerra,4,2007,159
+51,Voluptatem sit,3,Romance,ModestoAlfonsoMondragón,1,2002,141
+52,Blanditiis maiores,6.2,Documental,Laura Prado Jurado,1,2019,131
+53,Commodi et,4,Drama,Hernán Noriega,2,1980,75
+54,Labore libero sint,8.5,Romance,Lic. Olga Olvera,3,2025,122
+55,Nostrum,6.5,Terror,Ing. María Teresa Marrero,5,2017,115
+56,Culpa,2.8,Documental,JesúsCortezRamos,3,2015,180
+57,Molestiae nihil a,3.6,Terror,Juan Carlos Fernando Collazo,1,2001,107
+58,Omnis,2.4,Drama,Mercedes Nieves,4,2025,92
+59,Debitis expedita totam,4.1,DOCUMENTAL,Abigail Lorena Vásquez,2,2007,133
+60,Libero pariatur deleniti voluptatum neque,9.2,Ciencia Ficcion,Héctor Zelaya,5,2012,129
+61,Voluptatum laborum,1.6,Romance,Mtro. José María Acevedo,4,1996,151
+62,Ex,2.2,Accion,Teodoro Mauricio Guerra,5,1981,92
+63,Consequatur,3.4,Accion,Benjamín Mayte Maestas Riojas,2,2012,85
+64,Sunt in suscipit at,8.1,Terror,Manuel Martha Salinas Zambrano,4,2015,117
+65,At nesciunt,1.9,Documental,Dr. Pascual Cantú,4,1997,104
+66,Recusandae neque quae deserunt,6.1,Documental,Concepción Julia Duarte Roque,3,2017,142
+67,Sapiente,9.6,Ciencia Ficcion,Nicolás Arce Matías,2,1990,105
+68,Consectetur nemo,8,Terror,Diego Jaqueline Olivas Luna,1,2023,102
+69,Nam dolorum,2.6,Animacion,Samuel Alejandro Olmos,4,2011,103
+70,Fugiat,1.8,Comedia,Dr. Jaime Rendón,2,1982,133
+71,Magnam qui,1.6,Comedia,Lic. Emilio Gaona,1,2014,116
+72,Suscipit,1.7,Drama,José Eric Montaño,3,2022,146
+73,Aliquid debitis,3.3,Drama,Rodrigo Mayorga Robledo,4,1983,147
+74,Inventore,7.1,Ciencia Ficcion,Germán Alonzo Avilés,1,1986,169
+75,Ipsum nulla dolorem,1.3,Ciencia Ficcion,Trinidad Cervantes,3,2018,111
+76,Repellat doloremque,4.3,Romance,Irma Berta Alcántar,5,2006,83
+77,Placeat cupiditate voluptatum,6.3,Terror,Angélica Sauceda Barrientos,4,1980,87
+78,Quo,2.7,Documental,Mtro. José Carlos Puga,1,2001,175
+79,Numquam enim,2.5,Animacion,Sonia Olivo Garibay,2,2021,134
+80,Facere facilis,6.8,Accion,Noemí Marisol Almonte,4,2001,153
+81,Reiciendis mollitia,6.9,Terror,Porfirio Cardona de Anda,3,1986,166
+82,Consequatur magnam,2,Comedia,Mtro. Patricia Mondragón,2,2005,94
+83,Temporibus vel natus vitae,4.8,Comedia,Tomás Paola Madrid,5,2021,80
+84,Adipisci dolorum nulla omnis,3.1,Drama,Mateo Dávila,4,1981,116
+85,Animi nam repellendus,7.2,Terror,Bernabé Partida,4,1994,102
+86,Eveniet laboriosam eligendi dolores totam,8.6,Animacion,PatriciaVioletaLeón,1,2002,161
+87,Labore possimus et,5.2,Animacion,Manuel Bustamante,,1988,128
+88,Est,5.9,Accion,Genaro Marcela Farías Tamayo,5,2020,83
+89,Consequatur totam itaque officiis deleniti,5.7,Accion,Martha Eugenio Aranda Limón,4,2020,81
+90,Alias aut a repellat,8,Terror,CamilaGloriaQuiroz,5,2001,166
+91,Alias culpa inventore,6.6,Documental,Angélica Inés Lucio Leal,2,2017,91
+92,Ipsam placeat,3.3,Animacion,PedroAcuña,4,2005,108
+93,Dolores commodi aut,7.5,Accion,Ing. Rodolfo Olivas,3,2013,132
+94,Eveniet,3.6,Accion,Eva Cynthia Chávez Peña,3,1990,147
+95,Molestias repellendus,6.8,Accion,Dr. Martín Villalpando,5,1994,134
+96,Architecto iste,5.2,Ciencia Ficcion,Wilfrido Rebeca Murillo,5,1991,163
+97,Nisi,1.6,Terror,Violeta Luis Manuel Aparicio,3,1997,101
+98,Quisquam sapiente,6.5,Ciencia Ficcion,Olga Patricia Sauceda,3,2009,84
+99,Recusandae,4.4,Comedia,Lic. Cynthia Villalpando,3,1981,83
+100,Non,4.1,Romance,Lucas Matías Posada,2,1998,77
