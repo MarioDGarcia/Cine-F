@@ -15,47 +15,47 @@ Nuestro dataset consta de 3 archivos CSV, los cuales son:
  ### Películas (peliculas.csv)
 Contiene información básica de cada película.
 
-•	idPelicula: Identificador único de la película.
+•	**idPelicula:** Identificador único de la película.
 
-•	titulo: Título de la película.
+•	**titulo:** Título de la película.
 
-•	calificacion: Calificación en escala del 1 al 10.
+•	**calificacion:** Calificación en escala del 1 al 10.
 
-•	genero: Género cinematográfico (ej. Acción, Comedia, etc.).
+•	**genero:** Género cinematográfico (ej. Acción, Comedia, etc.).
 
-•	director: Nombre del director.
+•	**director:** Nombre del director.
 
-•	estrellas: Número de estrellas otorgadas (1 a 5).
+•	**estrellas:** Número de estrellas otorgadas (1 a 5).
 
-•	año: Año de estreno de la película.
+•	**año:** Año de estreno de la película.
 
-•	duracion en Minutos: Duración total de la película en minutos.
+•	**duracion en Minutos:** Duración total de la película en minutos.
 
 ### Salas (salas.csv)
 Describe las características físicas de las salas del cine.
 
-•	sala: Nombre o código de la sala (ej. SALA_1).
+•	**sala:** Nombre o código de la sala (ej. SALA_1).
 
-•	idSala: Identificador numérico único de la sala.
+•	**idSala:** Identificador numérico único de la sala.
 
-•	capacidad: Número máximo de asientos disponibles.
+•	**capacidad:** Número máximo de asientos disponibles.
 
-•	tipo de sala: Tipo de sala (2D, 3D, 4D – puede incluir variantes sucias como "2D", "2d", etc.).
+•	**tipo de sala:** Tipo de sala (2D, 3D, 4D – puede incluir variantes sucias como "2D", "2d", etc.).
 
 ### Cine (cine.csv)
 Historial de funciones proyectadas en el cine.
 
-•	fecha: Fecha de la proyección (con distintos formatos, como YYYY-MM-DD, DD/MM/YYYY, etc.).
+•	**fecha:** Fecha de la proyección (con distintos formatos, como YYYY-MM-DD, DD/MM/YYYY, etc.).
 
-•	idsalaUsada: ID de la sala utilizada para la proyección.
+•	**idsalaUsada:** ID de la sala utilizada para la proyección.
 
-•	hora: Hora de inicio de la función (formato puede variar).
+•	**hora:** Hora de inicio de la función (formato puede variar).
 
-•	IdpeliculaProyectada: ID de la película que se proyectó.
+•	**IdpeliculaProyectada:** ID de la película que se proyectó.
 
-•	precio boleto: Precio del boleto en pesos mexicanos.
+•	**precio boleto:** Precio del boleto en pesos mexicanos.
 
-•	boletosVendios: Número de boletos vendidos (puede incluir errores intencionales o sobreventa).
+•	**boletosVendios:** Número de boletos vendidos (puede incluir errores intencionales o sobreventa).
 
 
 ## Utilizando el principio R.O.C.C.C
