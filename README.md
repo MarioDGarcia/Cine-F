@@ -90,3 +90,139 @@ Despues de varias consultas y movimientos realizados, tenemos 2 opciones, al ser
 obte por trabajar con un modelado de datos en Power BI, porque la tabla de películas tiene información que puede ser relevante a analizar
 
 ## Visual - Power BI
+Como se trabajó con fechas y ventas, se hizo una tabla de fechas para poder trabajar con ellas, de ahí se realizó el modelado de datos para tener las conexiones correctamente
+
+![image](https://github.com/user-attachments/assets/27169886-a732-4d03-bd4f-d7df1946bfc5)
+
+Aún que es un dataset de pocas tablas el modelado es uno de tipo estrella siendo la tablla "Cine Limpio" la principal
+
+
+### Columnas calculadas:
+	$Venta Total = ROUND('Cine limpio'[precio boleto]* 'Cine limpio'[boletosVendios],2)
+La columna anterior sera muy util en algunas medidas futuras
+
+
+### Medidas utilizadas:
+Se crearón diferentes medidas para poder establecer los distintos KPI usados en el visual
+
+	Proyecciones Totales = COUNTROWS('Cine limpio')
+La medida antereior nos cuenta cuantas proyecciones hubo
+
+	Fecha Actual = 
+	VAR Mes = SELECTEDVALUE(Calendario[Date].[Mes])
+	VAR Anio = SELECTEDVALUE(Calendario[Date].[Año])
+	
+	RETURN
+	SWITCH(
+	    TRUE(),
+	    ISBLANK(Mes) && ISBLANK(Anio), "Datos Generales",
+	    ISBLANK(Mes), "Año " & Anio,
+	    ISBLANK(Anio), UPPER(Mes),
+	    UPPER(Mes) & " del Año " & Anio
+	)
+La anterior medida es para modificar **etiquetas** dependiendo de que este seleccionado
+
+	Mes Actual = 
+	IF (
+	    ISBLANK(SELECTEDVALUE(Calendario[Date].[Mes])),
+	    "Ganancia % Meses",
+	    IF (
+	        ISBLANK(SELECTEDVALUE(Calendario[Date].[Año])),
+	        "Todos los " & UPPER(SELECTEDVALUE(Calendario[Date].[Mes])),
+	        "Ganancia % " & UPPER(SELECTEDVALUE(Calendario[Date].[Mes])) & " Año Pasado"
+	    )
+	)
+La anterior Medida nos muestre el mes actual y tambien si seleccionamos el año cambie el *texto* de una **etiqueta** 
+
+	TEXT año anterio vs actual = 
+	VAR VentasActuales = SUM('Cine limpio'[$Venta Total])
+	VAR VentasAnioPasado = [Ventas LY]  -- Medida previamente creada con SAMEPERIODLASTYEAR
+	VAR Variacion = DIVIDE(VentasActuales - VentasAnioPasado, VentasAnioPasado)
+	
+	VAR AnioActual = SELECTEDVALUE(Calendario[Date].[Año])
+	
+	RETURN
+	IF(ISBLANK(SELECTEDVALUE(Calendario[Date].[Mes])),
+		IF(
+		    ISBLANK(Variacion) || ISBLANK(AnioActual),
+		    "Ganancia % Año Anterior",
+		    "Ganancia % " & UPPER(AnioActual - 1) & " VS " & AnioActual
+		),"Ganancia % Solo Año Anterior"
+	)
+
+La anterior Medida nos muestre un *texto*, deacuerdo con el año seleccionado y el año anterior, pero si no hay año anterior muestra un texto generico para una **etiqueta**
+
+	Ventas LY = 
+		CALCULATE(
+		sum('Cine limpio'[$Venta Total]),
+		PREVIOUSYEAR((Calendario[Date])
+		)
+	)
+
+	Ventas LM = 
+		CALCULATE(
+		    sum('Cine limpio'[$Venta Total]),
+		    PREVIOUSMONTH((Calendario[Date])
+		)
+	)
+ 
+Las medidas anteriores son necesarias para posteriores medidas, pero en otras palabras son para usar Time Intelligence y ver ventas con respecto a algo, en este caso el AÑO y MES, respectivamente 
+
+
+	Variación % Año vs Año = 
+	VAR VentasActuales = SUM('Cine limpio'[$Venta Total])
+	VAR VentasAnioPasado = [Ventas LY]  -- Esta medida debe estar definida previamente con SAMEPERIODLASTYEAR u otra función
+	
+	VAR Variacion = DIVIDE(VentasActuales - VentasAnioPasado,VentasAnioPasado)
+	
+	RETURN 
+	IF(
+		    ISBLANK(Variacion),
+		    "N/A",
+		    if(
+		        ISBLANK(SELECTEDVALUE(Calendario[Date].[Mes])),
+			        IF(
+			            Variacion >= 0,
+			            "▲ " & FORMAT(Variacion, "0.00%"),
+			            "▼ " & FORMAT(Variacion, "0.00%")
+			        ),
+		        	"N/A"
+			)
+	)
+
+	
+	Variacion % Mes vs Mismo Mes Ano Anterior = 
+		VAR VentasActuales = SUM('Cine limpio'[$Venta Total])
+		VAR VentasAnoPasado = 
+		    CALCULATE(
+		        SUM('Cine limpio'[$Venta Total]),
+		        SAMEPERIODLASTYEAR('Calendario'[Date])
+		    ) //pude ser la misma medida que tenemos como Ventas LY
+		
+		VAR Variacion = 
+		    IF(
+		        ISBLANK(VentasAnoPasado) || VentasAnoPasado = 0,
+		        BLANK(),
+		        DIVIDE(VentasActuales - VentasAnoPasado, VentasAnoPasado)
+		    )
+		
+		RETURN 
+		IF(
+		    ISBLANK(SELECTEDVALUE('Calendario'[Date].[Mes])), 
+		    "Sin Mes", 
+		    IF(
+		        ISBLANK(Variacion),
+		        "Sin Datos",
+		        IF(ISBLANK(SELECTEDVALUE(Calendario[Date].[Año])),"Sin Año" ,
+				IF(
+		            Variacion >= 0,
+		            "▲ " & FORMAT(Variacion, "0.00%"),
+		            "▼ " & FORMAT(Variacion, "0.00%")
+		        	)
+		    	)
+			)
+		)
+
+La medida anterio nos sirve para una **etiqueta** y nos mostrará el % de ganacia o perdida, dependiedo de AÑo o MES selecionado, respectivamente, cabe resaltar que si seleccionamos un mes y un año a la vez, solo mostrará numeros la segunda medida,
+si seleccionamos solo el año sin mes, nos dará la ganacia/perdida respecto al año pasado (la primera medida se modifica)
+
