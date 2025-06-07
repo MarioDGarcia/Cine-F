@@ -1,5 +1,5 @@
 # Cine-F
-Supongamos que se nos pidio sacar las siguientes preguntas:
+Para comenzar a trabajar con nuestro dataser vamos a suponer que incialmente tenemos algunas dudas por resolver (como todos los casos) y se nos pidio sacar respuestas para las siguientes preguntas:
 ### Preguntas
 Plantearemos las siguientes preguntas que tendremos que responder con nuestros datos, las cuales son:
 
