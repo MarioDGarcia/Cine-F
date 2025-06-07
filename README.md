@@ -1,4 +1,16 @@
 # Cine-F
+Supongamos que se nos pidio sacar las siguientes preguntas:
+### Preguntas
+Plantearemos las siguientes preguntas que tendremos que responder con nuestros datos, las cuales son:
+
+•¿Cuál es el total de ingresos de boletos vendidos?
+
+•¿Qué días o meses se vendieron más boletos?
+
+•¿Qué tipo de sala genera más ingresos?
+
+•¿Cual es la temporada alta y baja?
+
 Nuestro dataset consta de 3 archivos CSV, los cuales son:
  ### Películas (peliculas.csv)
 Contiene información básica de cada película.
@@ -225,4 +237,56 @@ Las medidas anteriores son necesarias para posteriores medidas, pero en otras pa
 
 La medida anterio nos sirve para una **etiqueta** y nos mostrará el % de ganacia o perdida, dependiedo de AÑo o MES selecionado, respectivamente, cabe resaltar que si seleccionamos un mes y un año a la vez, solo mostrará numeros la segunda medida,
 si seleccionamos solo el año sin mes, nos dará la ganacia/perdida respecto al año pasado (la primera medida se modifica)
+
+## Dashboard:
+![image](https://github.com/user-attachments/assets/2d0d94a2-e9a1-4c43-8307-3d742c6d0402)
+
+(Para una visualizacion dinamica y completa, es recomendable descargar el archivo con extension .pbix para visualizar con mayor comodidad los KPI)
+
+
+## Respondiendo preguntas iniciales:
+Ahora despues de haber hecho este analisis, limpieza y visualizacion de los datos Respoderemos a las preguntas iniciales
+
+### ¿Cuál es el total de ingresos de boletos vendidos?
+R: El total de todos los años y meses fueron -> $53,037,579 
+si vamos por años, 
+	
+*2023* -> $22,809,113
+ 	
+*2024* -> $21,982,816
+  	
+*2025* -> $8,245,651
+
+### ¿Qué días o meses se vendieron más boletos?
+Los meses con mas Ventas son:
+
+• Mayo
+
+• Abril
+
+• Enero
+
+y los mejores dias:
+	
+• 20
+
+• 19 
+
+• 7
+
+### ¿Qué tipo de sala genera más ingresos?
+El tipo de sala que genero mas ventas fueron en este orden: 
+	
+• 4D con 21 millones MXN 
+
+• 2D con 17 millones MXN
+	
+• 3D con 15 millones MXN
+ 
+### ¿Cual es la temporada alta y baja?
+
+La temporada *alta* es alrededor de los dias *17-23* y los meses *Marzo - Mayo*
+
+La temporada *baja* es alrededor de los dias *6-12* y los meses *Junio - Septiembre*
+
 
